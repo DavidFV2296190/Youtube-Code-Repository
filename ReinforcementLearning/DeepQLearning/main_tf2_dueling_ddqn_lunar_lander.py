@@ -4,7 +4,7 @@ from dueling_ddqn_tf2 import Agent
 from utils import plotLearning
 
 if __name__ == '__main__':
-    env = gym.make('LunarLander-v2')
+    env = gym.make('LunarLander-v3')
     agent = Agent(lr=0.0005, gamma=0.99, n_actions=4, epsilon=1.0,
                   batch_size=64, input_dims=[8])
     n_games = 500

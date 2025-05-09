@@ -1,11 +1,12 @@
-import gym, time
+import gymnasium as gym
+import time
 import numpy as np
 import matplotlib.pyplot as plt
 from dueling_dqn_torch import Agent
 from utils import plotLearning
 
 if __name__ == '__main__':
-    env = gym.make('LunarLander-v2')
+    env = gym.make('LunarLander-v3')
     num_games = 1000
     load_checkpoint = False
 

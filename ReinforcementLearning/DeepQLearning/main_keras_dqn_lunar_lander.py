@@ -1,11 +1,11 @@
 from simple_dqn_keras import Agent
 import numpy as np
-import gym
+import gymnasium as gym
 from utils import plotLearning
-from gym import wrappers
+from gymnasium import wrappers
 
 if __name__ == '__main__':
-    env = gym.make('LunarLander-v2')
+    env = gym.make('LunarLander-v3')
     lr = 0.0005
     n_games = 500
     agent = Agent(gamma=0.99, epsilon=0.0, alpha=lr, input_dims=8,

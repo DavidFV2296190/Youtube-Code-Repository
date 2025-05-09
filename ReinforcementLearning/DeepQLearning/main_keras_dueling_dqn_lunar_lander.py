@@ -1,6 +1,6 @@
 from dueling_dqn_keras import Agent
 import numpy as np
-import gym
+import gymnasium as gym
 from utils import plotLearning
 
 if __name__ == '__main__':

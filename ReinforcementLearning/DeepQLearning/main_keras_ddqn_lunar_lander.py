@@ -3,14 +3,14 @@ import os
 os.environ['CUDA_DEVICE_ORDER'] = 'PCI_BUS_ID'
 os.environ['CUDA_VISIBLE_DEVICES'] = '0'
 os.environ['TF_FORCE_GPU_ALLOW_GROWTH'] = 'true'
-import gym
+import gymnasium as gym
 from gym import wrappers
 import numpy as np
 from ddqn_keras import DDQNAgent
 from utils import plotLearning
 
 if __name__ == '__main__':
-    env = gym.make('LunarLander-v2')
+    env = gym.make('LunarLander-v3')
     ddqn_agent = DDQNAgent(alpha=0.0005, gamma=0.99, n_actions=4, epsilon=1.0,
                   batch_size=64, input_dims=8)
     n_games = 500

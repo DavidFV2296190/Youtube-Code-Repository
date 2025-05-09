@@ -1,9 +1,9 @@
 import os
-import gym
+import gymnasium as gym
 from dqn_tf import DeepQNetwork, Agent
 from utils import plotLearning
 import numpy as np
-from gym import wrappers
+from gymnasium import wrappers
 import matplotlib.pyplot as plt
 
 def preprocess(observation):

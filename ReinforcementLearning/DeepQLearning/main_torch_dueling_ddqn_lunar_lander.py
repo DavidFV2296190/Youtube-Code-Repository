@@ -1,10 +1,10 @@
-import gym
+import gymnasium as gym
 import numpy as np
 from dueling_ddqn_torch import Agent
 from utils import plotLearning
 
 if __name__ == '__main__':
-    env = gym.make('LunarLander-v2')
+    env = gym.make('LunarLander-v3')
     num_games = 250
     load_checkpoint = False
 
